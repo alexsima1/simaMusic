@@ -218,12 +218,16 @@ body {
     /*-------------------------footer----------------------*/
     .ad {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
+
     }
 
-    .ba2 {
-        margin-left: 15%;
+    .ad button {
+        margin: 0;
+        width: calc((4/3)*65%);
+        height: calc((3/4)*65%);
+
     }
 
 }
