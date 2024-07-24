@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 100dvw;
+    width: 100svw;
     height: max-content;
 
     font-family: "Roboto Slab", serif;
@@ -67,7 +67,7 @@ body {
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
-    height: 100dvh;
+    height: 100svh;
 
     background-color: #a16363;
     background-image: url(https://cdn.media.amplience.net/i/metallica/72-seasons_home-slider?fmt=auto&w=1536&sm=aspect&aspect=4:3);
