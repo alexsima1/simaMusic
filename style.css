@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 99dvw;
+    width: 100dvw;
     height: max-content;
 
     font-family: "Roboto Slab", serif;
