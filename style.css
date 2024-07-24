@@ -142,7 +142,7 @@ body {
 .ad {
     background-color: rgb(231, 231, 231);
 
-    height: 100dvh;
+    height: 100vh;
     display: flex;
 
     align-items: center;
