@@ -84,12 +84,12 @@ body {
     flex-direction: column;
     align-items: flex-end;
 
-    padding-bottom: 3em;
     /*margin-right: 1.5em;*/
 }
-.btxt{
+
+.btxt {
     background-color: rgba(0, 0, 0, 0.8);
-    padding-right: 1em;
+
 }
 
 .bh {
@@ -112,30 +112,35 @@ body {
 
 .bb {
 
-    color: rgb(0, 0, 0);
+    color: aliceblue;
 
-    border-width: 2px;
+    border-width: 1px;
     border-color: aliceblue;
-    font-size: 2rem;
-    border-top-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
+    font-size: 1.7rem;
+
+
+
+    background-color: rgba(0, 0, 0, 0);
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    /*     border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em; */
 
     align-self: flex-end;
-    margin-right: 1em;
-
+    margin: 0.5em;
     transition: all 0.5s;
 }
 
 .bb:hover {
-    border-radius: 0;
-    border-top-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-
     transform: scale(1.1);
     transform: translate(0px 5px);
+
     background-color: rgba(240, 248, 255, 0.8);
+
     color: black;
     border-color: black;
+
     box-shadow: 0 0.2em 0.8em rgba(255, 255, 255, 0.2);
 
 }
@@ -160,7 +165,7 @@ body {
     width: calc((3/4)*60%);
     height: calc((3/4)*60%);
 
-    
+
 }
 
 .ba1 {
@@ -182,18 +187,240 @@ body {
     margin-top: 25svw;
 }
 
+/* -------------------------prodocts -------------*/
+/* Main products container */
+.procon {
+    display: flex;
+    flex-direction: column;
 
+    padding: 1em 2em 1em;
+}
+
+/* nav */
+.contitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+
+}
+
+.contitle>h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: black;
+
+    text-transform: uppercase;
+}
+
+.contitle>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+
+    align-content: center;
+
+    transition: all 0.5s;
+}
+
+.contitle>a:hover {
+    text-decoration: underline;
+
+    transform: scale(1.1);
+
+}
+
+/* product slider */
+.conproduct {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+/* product */
+.pro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.pimg {
+    width: 20svw;
+    height: 20svw;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+}
+
+.pimg button {
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+
+    border: 1px solid aliceblue;
+
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+}
+
+.pimg button:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+/* product title */
+.pinf {
+    margin: 0.5em 0;
+}
+
+.pinf a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+}
+
+.pinf a:hover {
+    text-decoration: underline;
+
+}
+
+/* product price */
+.price a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 1.3rem;
+
+}
+
+/*--------------------Instegram grid------------------*/
+.inst {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(37, 37, 37);
+}
+
+.ih {
+    font-size: 2rem;
+    font-weight: 600;
+    color: aliceblue;
+    text-transform: uppercase;
+
+    grid-column-end: span 4;
+    /*     background-color: rgba(178, 133, 220, 0.3);
+    border: 1px dotted aliceblue; */
+
+    justify-self: left;
+}
+
+.ia {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+
+    justify-self: right;
+    align-self: center;
+    color: aliceblue;
+    transition: all 0.5s;
+
+    /*     background-color: rgba(178, 133, 220, 0.3);
+    border: 1px dotted aliceblue; */
+}
+
+.ia:hover {
+    transform: scale(0.9);
+
+}
+
+.inst>div {
+    margin: 1em 0px;
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    justify-items: center;
+
+    border: 1px solid aliceblue;
+    padding: 0 0 1.5em 0;
+}
+
+.ip {
+    background-image: url(https://scontent.cdninstagram.com/v/t51.2885-15/453212463_1181367933112628_1337318330003849666_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=18de74&_nc_ohc=gk6Tnx2RIucQ7kNvgF5QRil&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCZq8UEcWb0DWWr9nrV2TfhTa2rrEsWnxsVBDxU_8BTEQ&oe=66AE9771);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 15svw;
+    height: 15svw;
+
+    transition: all 0.5s;
+
+}
+
+.ti>a {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip>div {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.ip>div:hover {
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.ti h2 {
+    color: rgba(240, 248, 255, 1);
+    text-decoration: none;
+    border: none;
+}
+
+.ti div:hover {
+    color: aliceblue;
+
+}
+
+.ti>a h2 {
+    padding: 0.3em;
+}
 
 /*--------------------------------------footer---------------------------*/
 
-.fot{
+.fot {
     display: flex;
 
     flex-direction: column;
 }
 
 /*upper footer*/
-.uf{
+.uf {
     display: flex;
 
     justify-content: flex-end;
@@ -201,7 +428,8 @@ body {
     background-color: rgb(223, 95, 95);
     text-transform: uppercase;
 }
-.uf>section{
+
+.uf>section {
     display: flex;
     flex-direction: column;
 
@@ -215,18 +443,18 @@ body {
     color: rgb(37, 37, 37);
 }
 
-.uf>section>h3{
+.uf>section>h3 {
     padding-bottom: 0.2em;
 
     font-weight: 400;
 }
 
-.uf>section>p{
+.uf>section>p {
     font-weight: 800;
 
 }
 
-.uf>section>button{
+.uf>section>button {
 
     background-color: rgb(223, 95, 95);
 
@@ -246,7 +474,7 @@ body {
     transition: all 1s;
 }
 
-.uf>section>button:hover{
+.uf>section>button:hover {
     text-decoration: underline solid rgb(37, 37, 37);
 
     transform: scale(1.1);
@@ -254,16 +482,17 @@ body {
 }
 
 /*lower footer*/
-.lf{
+.lf {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5em 0px ;
+    padding: 1.5em 0px;
 
     background-color: rgb(37, 37, 37);
     color: aliceblue;
 }
-.lf>section{
+
+.lf>section {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
     /*display: flex;
@@ -272,14 +501,15 @@ body {
     margin-right: 1.5em;*/
 
 }
-.lfi{
+
+.lfi {
     align-self: flex-start;
     height: 7em;
 
 
 }
 
-.lf>section a{
+.lf>section a {
     border-right: 2px solid aliceblue;
     padding-right: 0.2em;
     padding-left: 0.2em;
@@ -287,11 +517,12 @@ body {
 
     text-decoration: none;
 }
-.lf>section a:hover{
+
+.lf>section a:hover {
     color: rgb(184, 224, 255);
 }
 
-.lf>section a:last-of-type{
+.lf>section a:last-of-type {
     border-right: none;
 }
 
@@ -330,11 +561,12 @@ body {
 
     .bp {
         font-size: 1rem;
-        text-align:right;
+        text-align: right;
     }
 
     .bb {
-        margin: 0;
+        margin: 0.5em 0 0.5em;
+
         align-self: center;
     }
 
@@ -354,50 +586,74 @@ body {
 
     }
 
+    /*---------------------------------instegram*/
+    .inst {
+        font-size: 0.7rem;
+
+    }
+
+    /* ---------------------------products-------------------- */
+    .conproduct {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+    }
+
+    .pimg {
+        width: 45svw;
+        height: 45svw;
+
+    }
+
+
+
     /*----------------------------------footer*-----------------------/
 
     /*upepr footer*/
-    .uf{
+    .uf {
         justify-content: center;
     }
-    .uf>section{
+
+    .uf>section {
         justify-content: flex-start;
         padding-left: 2em;
     }
 
     /*lower footer*/
-    .lf{
+    .lf {
         flex-direction: column;
         align-content: center;
     }
-    .lfi{
+
+    .lfi {
         align-self: center;
     }
 
-    .lf>section{
+    .lf>section {
         width: 100%;
         grid-template-columns: 1fr 1fr;
-       /*flex-direction: column;
+        /*flex-direction: column;
         align-items: flex-end;*/
         border-top: 1px solid aliceblue;
 
         margin-top: 1em;
     }
-    .lf>section a{
-        border:none;
+
+    .lf>section a {
+        border: none;
         border-bottom: 1px solid aliceblue;
-        
+
         text-decoration: none;
         text-align: center;
 
         padding: 2em;
     }
-    .lf>section a:nth-of-type(1),.lf>section a:nth-of-type(3){
+
+    .lf>section a:nth-of-type(1),
+    .lf>section a:nth-of-type(3) {
         border-right: 1px solid aliceblue;
     }
 
-    .lf>section a:last-of-type{
-        
-
-    }
+    .lf>section a:last-of-type {}
 }
